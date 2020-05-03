@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Challenge-01</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left_column">
+        <div class="logo">
+          <img src="./imgs/logo.png" alt="DocDoctur logo" />
+        </div>
+        <h3 class="banner_statement">
+          Fix, Organize & Share Your Documents Easily.
+        </h3>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="./imgs/man.png" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./imgs/man_box.png" />
+          </div>
+          <div class="carousel_nav">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+      </div>
+      <div class="right_column">
+        <p class="already_member_para">
+          <span>Already a Member?</span> Sign In
+        </p>
+        <div class="contents">
+          <h4>Sign Up on DocDoctur</h4>
+          <button class="btn_SignUp_Google">
+            <div class="logo_text">
+              <div class="Google_logo">
+                <i class="fab fa-google"></i>
+              </div>
+              <div class="btn_Sign_up">
+                Sign Up With Google
+              </div>
+            </div>
+          </button>
+          <br />
+          <!-- Rectangles -->
+          <div class="hr_or">
+            <hr />
+            <h5>OR</h5>
+            <hr />
+            <br />
+          </div>
+          <!-- Labels -->
+          <label for="fullName" class="label_text name">Full Name</label>
+          <br />
+          <input type="text" class="input_fields" required /><br />
+          <label for="Email" class="label_text email">Email Address</label>
+          <br />
+          <input type="email" class="input_fields" /><br />
+          <label for="password" class="label_text password">Password</label>
+          <br />
+          <input
+            type="password"
+            class="input_fields pwd"
+            placeholder="6+ Characters"
+          />
+          <br />
+          <div class="terms_conditions">
+            <label for="conditions" class="terms_statement">
+              <input type="checkbox" id="cbx" />
+            </label>
+            <p class="conditions_para">
+              <span class="condition_text">
+                Creating an accounts means you agree to our
+              </span>
+              Terms of Service <span class="condition_text">&</span> Privacy
+              Policies.
+            </p>
+          </div>
+          <br />
+          <button class="btn_create_account">Create Account</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000);
+      }
+    </script>
+  </body>
+</html>

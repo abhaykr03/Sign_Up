@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: HelveticaNeue;
+}
+.container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: auto;
+  position: relative;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 32px;
+}
+h4 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.left_column {
+  background-color: #8facff;
+}
+.logo {
+  width: 210px;
+}
+.logo > img {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  margin-left: 140px;
+}
+.banner_statement {
+  margin-left: 140px;
+  margin-right: 160px;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  width: 400px;
+  margin: 56px 91px 121px 92px;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 400px;
+  height: auto;
+}
+.carousel_nav {
+  text-align: center;
+  margin-top: 40px;
+}
+.prev:hover,
+.next:hover {
+  background-color: #030047;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #030047;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.right_column {
+  position: relative;
+}
+.contents {
+  margin: 112px 230px 66px 200px;
+}
+p {
+  font-size: 14px;
+  font-weight: medium;
+}
+.already_member_para {
+  position: absolute;
+  top: 40px;
+  right: 140px;
+}
+.already_member_para > span {
+  font-size: 14px;
+  font-weight: medium;
+  color: #a4a4a4;
+}
+.btn_SignUp_Google {
+  width: 352px;
+  height: 48px;
+  margin-top: 27px;
+  background-color: #4285f4;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+.logo_text {
+  width: 300px;
+  height: auto;
+  display: flex;
+}
+.Google_logo {
+  width: 16px;
+  height: auto;
+  margin-top: 17px;
+  margin-left: 33px;
+}
+.btn_Sign_up {
+  width: 250px;
+  margin-top: 15px;
+  margin-left: 64px;
+  margin-bottom: 14px;
+}
+.hr_or {
+  margin-top: 22px;
+  width: 352px;
+}
+hr {
+  width: 37%;
+  height: 4px;
+  margin-top: 22px;
+  border-radius: 30px;
+  background-color: #a4a4a4;
+  display: inline-block;
+  margin: 0 1%;
+  vertical-align: middle;
+}
+h5 {
+  display: inline-block;
+  padding: 0 22px;
+}
+.label_text {
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+}
+.name {
+  margin-top: 50px;
+}
+.email {
+  margin-top: 24px;
+}
+.password {
+  margin-top: 24px;
+}
+.input_fields {
+  margin-top: 8px;
+  padding-left: 16px;
+  border-width: 0px;
+  border-radius: 10px;
+  width: 352px;
+  height: 48px;
+  font-size: 20px;
+  background-color: #efefef;
+}
+.pwd::placeholder {
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+#cbx {
+  width: 16px;
+  height: 16px;
+}
+.btn_create_account {
+  width: 231px;
+  height: 48px;
+  margin-top: 24px;
+  background-color: #ffcc3e;
+  border-radius: 10px;
+  border: none;
+  color: #030047;
+  font-size: 16px;
+  font-weight: bold;
+}
+.terms_conditions {
+  margin-top: 24px;
+  width: 352px;
+}
+.terms_conditions {
+  display: flex;
+  justify-content: space-between;
+}
+.condition_text {
+  font-size: 14px;
+  font-weight: medium;
+  color: #a4a4a4;
+}
+.terms_statement {
+  display: inline-block;
+}
+.conditions_para {
+  width: 326px;
+}
